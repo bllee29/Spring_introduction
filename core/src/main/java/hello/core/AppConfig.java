@@ -16,18 +16,26 @@ import org.springframework.context.annotation.Configuration;
 public class AppConfig {
     // 역할에 따른 구현이 잘 보이도록 해야한다.
 
+//    call AppConfig.memberService
+//    call AppConfig.memberRepository
+//    call AppConfig.orderService
+    // 호출 순서는 위와 같음
+
     @Bean
     public MemberService memberService() {
+        System.out.println("call AppConfig.memberService");
         return new MemberServiceImpl(memberRepository());
     }
 
     @Bean
     public OrderService orderService() {
+        System.out.println("call AppConfig.orderService");
         return new OrderServiceImpl(memberRepository(), getDiscountPolicy());
     }
 
     @Bean
     public MemberRepository memberRepository() {
+        System.out.println("call AppConfig.memberRepository");
         return new MemoryMemberRepository();
     }
 
