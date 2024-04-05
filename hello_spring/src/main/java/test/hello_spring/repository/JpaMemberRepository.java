@@ -1,6 +1,6 @@
-package hello.hello_spring.repository;
+package test.hello_spring.repository;
 
-import hello.hello_spring.domain.Member;
+import test.hello_spring.domain.Member;
 
 import jakarta.persistence.EntityManager;
 import java.util.List;

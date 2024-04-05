@@ -1,7 +1,7 @@
-package hello.hello_spring.service;
+package test.hello_spring.service;
 
-import hello.hello_spring.domain.Member;
-import hello.hello_spring.repository.MemoryMemberRepository;
+import test.hello_spring.domain.Member;
+import test.hello_spring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
+
 class MemberServiceTest {
     MemberService memberService;
     MemoryMemberRepository memberRepository;
@@ -25,7 +25,7 @@ class MemberServiceTest {
     public void 회원가입() throws Exception {
         //Given
         Member member = new Member();
-        member.setName("hello");
+        member.setName("test");
         //When
         Long saveId = memberService.join(member);
         //Then
