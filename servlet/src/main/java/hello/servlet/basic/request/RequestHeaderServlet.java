@@ -38,7 +38,7 @@ public class RequestHeaderServlet extends HttpServlet {
         printEtc(request);
     }
 
-    //Header 모든 정보
+    // Header 모든 정보
     private void printHeaders(HttpServletRequest request) {
         System.out.println("--- Headers - start ---");
 
@@ -55,7 +55,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println();
     }
 
-    //Header 편리한 조회
+    // Header 편리한 조회
     private void printHeaderUtils(HttpServletRequest request) {
         System.out.println("--- Header 편의 조회 start ---");
         System.out.println("[Host 편의 조회]");
@@ -87,7 +87,7 @@ public class RequestHeaderServlet extends HttpServlet {
         System.out.println();
     }
 
-    //기타 정보
+    // 기타 정보
     private void printEtc(HttpServletRequest request) {
         System.out.println("--- 기타 조회 start ---");
         System.out.println("[Remote 정보]");
