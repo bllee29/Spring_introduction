@@ -1,7 +1,7 @@
-package test.hello_spring;
+package test2.hello_spring;
 
-import test.hello_spring.repository.*;
-import test.hello_spring.service.MemberService;
+import test2.hello_spring.repository.*;
+import test2.hello_spring.service.MemberService;
 import jakarta.persistence.EntityManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

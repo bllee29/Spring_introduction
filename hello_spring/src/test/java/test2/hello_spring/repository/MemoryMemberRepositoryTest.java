@@ -1,5 +1,5 @@
-package test.hello_spring.repository;
-import test.hello_spring.domain.Member;
+package test2.hello_spring.repository;
+import test2.hello_spring.domain.Member;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import java.util.List;

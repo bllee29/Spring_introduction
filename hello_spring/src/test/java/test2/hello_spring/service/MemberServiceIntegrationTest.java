@@ -1,6 +1,6 @@
-package test.hello_spring.service;
-import test.hello_spring.domain.Member;
-import test.hello_spring.repository.MemberRepository;
+package test2.hello_spring.service;
+import test2.hello_spring.domain.Member;
+import test2.hello_spring.repository.MemberRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -17,7 +17,7 @@ class MemberServiceIntegrationTest {
     public void 회원가입() throws Exception {
         //Given
         Member member = new Member();
-        member.setName("test");
+        member.setName("test2");
         //When
         Long saveId = memberService.join(member); //Then
         Member findMember = memberRepository.findById(saveId).get();

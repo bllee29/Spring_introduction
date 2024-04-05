@@ -1,7 +1,7 @@
-package test.hello_spring.service;
+package test2.hello_spring.service;
 
-import test.hello_spring.domain.Member;
-import test.hello_spring.repository.MemoryMemberRepository;
+import test2.hello_spring.domain.Member;
+import test2.hello_spring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -25,7 +25,7 @@ class MemberServiceTest {
     public void 회원가입() throws Exception {
         //Given
         Member member = new Member();
-        member.setName("test");
+        member.setName("test2");
         //When
         Long saveId = memberService.join(member);
         //Then

@@ -1,7 +1,7 @@
-package test.hello_spring.service;
+package test2.hello_spring.service;
 
-import test.hello_spring.domain.Member;
-import test.hello_spring.repository.MemberRepository;
+import test2.hello_spring.domain.Member;
+import test2.hello_spring.repository.MemberRepository;
 import java.util.List;
 import java.util.Optional;
 public class MemberService {

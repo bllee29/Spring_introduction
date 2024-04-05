@@ -1,4 +1,4 @@
-package test.hello_spring.domain;
+package test2.hello_spring.domain;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

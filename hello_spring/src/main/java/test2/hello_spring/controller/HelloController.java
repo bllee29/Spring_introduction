@@ -1,4 +1,4 @@
-package test.hello_spring.controller;
+package test2.hello_spring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,7 +24,7 @@ public class HelloController {
     @GetMapping("hello-string")
     @ResponseBody   // 응답 바디에 직접 내용을 넣겠다
     public String helloString(@RequestParam("name") String name){
-        return "test " + name;
+        return "test2 " + name;
         // html파일에 템플릿 엔진으로 받아서 보내는게 아니라 진짜 string이 나감
         // api가 데이터를 return 하는것처럼
     }
