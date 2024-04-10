@@ -107,5 +107,13 @@ public class BasicItemController {
         itemRepository.save(new Item("testB", 20000, 20));
     }
 
+    /**
+     * PRG - Post/Redirect/Get
+     */
+    @PostMapping("/add")
+    public String addItemV5(Item item) {
+        itemRepository.save(item);
+        return "redirect:/basic/items/" + item.getId();
+    }
 
 }
